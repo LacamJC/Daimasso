@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+*{
+    font-size: 105%;
+    letter-spacing: 2px;
+    font-family: "Lora", cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+$preto: #474747;
+
+
+nav{
+    @media screen and (min-width:769px){height: 100px;}
+    background-color: white;
+    border-bottom: 2px solid $preto;
+    z-index: 1;
+}
+
+.side_menu{
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    top: 0px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    @media screen and (max-width:768px){padding: 0px;}
+    .side_menu--item a{
+        text-decoration: none;
+        color: $preto;
+
+        @media screen and (max-width:768px){font-size: 0.9rem;}
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+@mixin title(){
+    color: $preto;
+    font-size: 2.3rem;
+    letter-spacing: 5px;
+}
+
+@mixin paragraph(){
+    color: $preto;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-indent: 10px;
+
+}
+

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  font-size: 105%;
+  letter-spacing: 2px;
+  font-family: "Lora", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: white;
+  border-bottom: 2px solid #474747;
+  z-index: 1;
+}
+@media screen and (min-width: 769px) {
+  nav {
+    height: 100px;
+  }
+}
+
+.side_menu {
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+  top: 0px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .side_menu {
+    padding: 0px;
+  }
+}
+.side_menu .side_menu--item a {
+  text-decoration: none;
+  color: #474747;
+}
+@media screen and (max-width: 768px) {
+  .side_menu .side_menu--item a {
+    font-size: 0.9rem;
+  }
+}
+.side_menu .side_menu--item a:hover {
+  text-decoration: underline;
+}
+
+.paragrafo {
+  color: #474747;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-indent: 10px;
+}
+
+section {
+  padding-top: 100px !important;
+}
+
+#sobreNos {
+  padding-top: 0px;
+}
+
+.curso_destaque {
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 3px solid #474747;
+}
+@media screen and (max-width: 768px) {
+  .curso_destaque {
+    flex-direction: column;
+  }
+}
+.curso_destaque .thumbail {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .curso_destaque .thumbail {
+    width: 100%;
+  }
+}
+.curso_destaque .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .curso_destaque .content {
+    width: 100%;
+  }
+  .curso_destaque .content h1 {
+    text-align: center;
+  }
+}
+.curso_destaque .content h1 {
+  color: #474747;
+  font-size: 2.3rem;
+  letter-spacing: 5px;
+}
+
+.sobre_nos {
+  border: 1px solid #474747;
+  padding: 30px 0px;
+  margin: 100px 0px;
+}
+
+.cursos {
+  border: 2px solid #474747;
+  min-height: 500px;
+}
+.cursos .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.cursos .content .Card {
+  background-color: rgb(65, 65, 65);
+  width: 375px;
+  height: 197px;
+  margin: 50px 0px;
+  border-radius: 35px;
+  padding: 21px 20px;
+  color: white;
+  overflow: hidden;
+  transform: all 0.5s ease;
+}
+.cursos .content .Card .btn {
+  position: relative;
+  top: 0px;
+  z-index: 3;
+}
+.cursos .content .Card h2 {
+  z-index: 3;
+  position: relative;
+}
+.cursos .content .Card .ball {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(161, 161, 161);
+  border-radius: 50%;
+  position: relative;
+  top: -103px;
+  left: 299px;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.cursos .content .Card:hover .ball {
+  width: 1000px;
+  top: -200px;
+  left: -50px;
+  height: 1000px;
+  border-radius: 0px;
+}/*# sourceMappingURL=main.css.map */
