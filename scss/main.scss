@@ -134,7 +134,7 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 60px;
+        padding: 30px 60px;
         @media screen and (max-width:768px){padding: 10px 20px; width: 100%;}
 
         .contato__card__header{
@@ -144,6 +144,7 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 20px 0px;
             // width: 100%;
             img{
                 max-width: 300px;
