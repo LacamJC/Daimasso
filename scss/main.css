@@ -11,7 +11,7 @@ html {
 
 nav {
   background-color: white;
-  border-bottom: 2px solid #474747;
+  border-bottom: 2px solid #222222;
   z-index: 1;
 }
 @media screen and (min-width: 769px) {
@@ -33,6 +33,11 @@ nav {
   height: 50px;
   align-items: center;
 }
+.side_menu .side_menu--item a {
+  padding: 3px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
 @media screen and (max-width: 768px) {
   .side_menu {
     padding: 0px;
@@ -40,23 +45,23 @@ nav {
 }
 .side_menu .side_menu--item a {
   text-decoration: none;
-  color: #474747;
+  color: #222222;
 }
-@media screen and (max-width: 768px) {
-  .side_menu .side_menu--item a {
-    font-size: 0.9rem;
-  }
-}
-.side_menu .side_menu--item a:hover {
-  text-decoration: underline;
+
+.link_actived {
+  padding: 3px 20px;
+  color: rgba(255, 255, 255, 0.937254902) !important;
+  background-color: #556B2F;
+  /* background-image: linear-gradient(45deg, #556B2F, transparent); */
+  font-weight: bold;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.808);
+  background-color: #222222;
 }
 
 .paragrafo {
-  color: #474747;
+  color: #222222;
   font-size: 1.2rem;
   letter-spacing: 1px;
   text-indent: 10px;
@@ -81,6 +86,7 @@ section {
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: rgba(255, 255, 255, 0.937254902);
+  padding-bottom: 30px;
 }
 .curso_destaque .btn {
   background-color: #556B2F;
@@ -93,12 +99,13 @@ section {
   border-color: transparent;
 }
 .curso_destaque .btn:hover {
-  border: 2px solid #474747;
+  border: 2px solid #222222;
 }
 @media screen and (max-width: 768px) {
   .curso_destaque {
     flex-direction: column;
     padding: 0px;
+    padding-bottom: 50px;
     border-left: none;
     border-right: none;
   }
@@ -131,7 +138,7 @@ section {
   }
 }
 .curso_destaque .content h1 {
-  color: #474747;
+  color: #222222;
   font-size: 2.3rem;
   letter-spacing: 5px;
 }
@@ -184,7 +191,7 @@ section {
   align-items: center;
 }
 .cursos .content .Card {
-  background-color: #474747;
+  background-color: #222222;
   width: 375px;
   height: 197px;
   margin: 50px 0px;
@@ -209,12 +216,13 @@ section {
   border-color: transparent;
 }
 .cursos .content .Card .btn:hover {
-  border: 2px solid #474747;
+  border: 2px solid #222222;
 }
 .cursos .content .Card h3 {
   z-index: 3;
   position: relative;
   transition: 1s ease all;
+  font-weight: bold;
   color: #556B2F;
 }
 .cursos .content .Card .ball {
@@ -229,7 +237,7 @@ section {
   transition: all 0.5s ease;
 }
 .cursos .content .Card:hover h3 {
-  color: #474747;
+  color: #222222;
 }
 .cursos .content .Card:hover .ball {
   width: 1000px;
@@ -303,7 +311,7 @@ section {
   font-size: 2rem;
 }
 #contato .contato__card__bottom ul li {
-  color: #474747;
+  color: #222222;
 }
 
 footer {
@@ -312,4 +320,13 @@ footer {
   bottom: 0px;
   background-color: rgba(255, 255, 255, 0.937254902);
   font-size: 0.9rem;
+}
+
+.img_content {
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .img_content {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */

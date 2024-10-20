@@ -19,7 +19,7 @@ $branco: #ffffffef; // - Proporciona luminosidade e pureza.
 $dourado-claro: #556B2F; //#DAA520; // - Adiciona um toque de luxo e sofisticação.
 $verde-oliva: #556B2F;
 
-$preto: #474747;
+$preto: #222222;
 
 
 nav{
@@ -41,17 +41,31 @@ nav{
     justify-content: space-around;
     height: 50px;
     align-items: center;
+
+    .side_menu--item a{
+        padding: 3px 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
     @media screen and (max-width:768px){padding: 0px;}
     .side_menu--item a{
         text-decoration: none;
         color: $preto;
 
-        @media screen and (max-width:768px){font-size: 0.9rem;}
-        &:hover{
-            text-decoration: underline;
-        }
+
     }
 }
+
+
+.link_actived{
+    padding: 3px 20px;
+    color: $branco !important;
+    background-color: #556B2F;
+    /* background-image: linear-gradient(45deg, #556B2F, transparent); */
+    font-weight: bold;
+}
+
+
 @mixin title(){
     color: $preto;
     font-size: 2.3rem;

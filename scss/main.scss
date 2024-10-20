@@ -1,7 +1,8 @@
 @import '_variables';
 
 body{
-    background-color: rgba(0, 0, 0, 0.808);
+    // background-color: rgba(0, 0, 0, 0.808);
+    background-color: $preto
 }
 
 .paragrafo{
@@ -28,6 +29,7 @@ section {
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: $branco;
+    padding-bottom: 30px;
     // border: 3px solid $preto;
 
     .btn{
@@ -38,6 +40,7 @@ section {
     {
         flex-direction: column;
         padding: 0px;
+        padding-bottom: 50px;
         border-left: none;
         border-right: none;
     }
@@ -124,6 +127,7 @@ section {
                 z-index: 3;
                 position: relative;
                 transition: 1s ease all;
+                font-weight: bold;
                 color: $dourado-claro;
             }
             .ball
@@ -227,3 +231,10 @@ footer{
     background-color: $branco;
     font-size: 0.9rem;
 }
+
+.img_content
+{
+    width: 30%;
+    @media screen and (max-width:768px){width: 90%;}
+}
+
