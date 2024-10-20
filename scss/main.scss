@@ -122,3 +122,72 @@ section {
         }
     }
 }
+
+
+#contato{
+    .contato__card{
+        background-color: whitesmoke;
+        width: 60%;
+        min-height: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 60px;
+        @media screen and (max-width:768px){padding: 10px 20px; width: 100%;}
+
+        .contato__card__header{
+            // background-color: red;
+            width: 80%;
+            @media screen and (max-width:768px){width: 100%;}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 100%;
+            img{
+                max-width: 300px;
+                margin: auto;
+
+            }
+        }
+    }
+
+    .contato__card__body{
+        // background-color: blue;
+        width: 80%;
+        @media screen and (max-width:768px){width: 100%;}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__card__bottom{
+        // background-color: pink;
+        width: 80%;
+        @media screen and (max-width:768px){width: 100%;}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            font-size: 2rem;
+            // color: black;
+            li{
+                color: $preto;
+            }
+        }
+    }
+}
+
+footer{
+    position: relative;
+    border-top: 2px solid $preto;
+    margin-top: 300px;
+    bottom: 0px;
+}

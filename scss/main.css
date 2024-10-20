@@ -167,4 +167,77 @@ section {
   left: -50px;
   height: 1000px;
   border-radius: 0px;
+}
+
+#contato .contato__card {
+  background-color: whitesmoke;
+  width: 60%;
+  min-height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+}
+@media screen and (max-width: 768px) {
+  #contato .contato__card {
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
+#contato .contato__card .contato__card__header {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #contato .contato__card .contato__card__header {
+    width: 100%;
+  }
+}
+#contato .contato__card .contato__card__header img {
+  max-width: 300px;
+  margin: auto;
+}
+#contato .contato__card__body {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #contato .contato__card__body {
+    width: 100%;
+  }
+}
+#contato .contato__card__bottom {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #contato .contato__card__bottom {
+    width: 100%;
+  }
+}
+#contato .contato__card__bottom ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 2rem;
+}
+#contato .contato__card__bottom ul li {
+  color: #474747;
+}
+
+footer {
+  position: relative;
+  border-top: 2px solid #474747;
+  margin-top: 300px;
+  bottom: 0px;
 }/*# sourceMappingURL=main.css.map */

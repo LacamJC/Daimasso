@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="scss/main.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertary" style="overflow: hidden;">
+    <nav class="navbar navbar-expand-lg bg-body-tertary" style="overflow: hidden; z-index: 7;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <!-- <img src="img/logo.webp" alt="Logo" width="200px"> -->
@@ -29,13 +29,13 @@
                 <a class="nav-link" href="#cursos">Cursos</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contato</a>
+                <a href="#contato" class="nav-link">Contato</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <ul class="side_menu">
+      <ul class="side_menu" style="z-index: 5;">
         <li class="side_menu--item">
           <a href="#">Home</a>
         </li>
@@ -46,7 +46,7 @@
           <a href="#cursos">Cursos</a>
         </li>
         <li class="side_menu--item">
-          <a href="#">Contato</a>
+          <a href="#contato">Contato</a>
         </li>
       </ul>
       <section class="curso_destaque container mx-auto pt-0">
@@ -114,8 +114,38 @@
         </div>
       </section>
 
+      <section id="contato">
+        <div class="contato__card">
+          <div class="contato__card__header">
+            <img src="img/logo_pp.svg" alt="">
+          </div>
+
+          <div class="contato__card__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officia dolorum sint, nulla architecto quod recusandae sunt voluptates inventore obcaecati ullam quia quae maxime repellat unde. Praesentium itaque inventore suscipit.</p>
+          </div>
+
+          <div class="contato__card__bottom">
+            <ul>
+              <a href="#">
+                <li><i class="fa-brands fa-instagram"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa-brands fa-facebook"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
       
 
+      <footer>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci odit tenetur atque nam incidunt illo cum ex fuga itaque corporis cumque reprehenderit, eligendi temporibus quo, quaerat error molestias. Consequuntur, soluta.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quam quia nesciunt suscipit distinctio hic tenetur iusto aliquid eius? Atque facilis nostrum blanditiis nihil voluptatum harum, dicta consequatur ipsam nesciunt?
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/08fc47258c.js" crossorigin="anonymous"></script>
   </body>
 </html>
