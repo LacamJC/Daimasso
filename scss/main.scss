@@ -216,8 +216,18 @@ section {
             list-style: none;
             font-size: 2rem;
             // color: black;
+            
+            a{
+                filter: drop-shadow(0px 0px 3px trasnparent);
+                transition: 1s ease all;
+                &:hover{
+                    filter: drop-shadow(0px 0px 5px $verde-oliva);
+                }
+            }
             li{
                 color: $preto;
+
+
             }
         }
     }

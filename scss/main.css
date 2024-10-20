@@ -41,6 +41,7 @@ nav {
 @media screen and (max-width: 768px) {
   .side_menu {
     padding: 0px;
+    font-size: 0.6rem;
   }
 }
 .side_menu .side_menu--item a {
@@ -309,6 +310,13 @@ section {
   align-items: center;
   list-style: none;
   font-size: 2rem;
+}
+#contato .contato__card__bottom ul a {
+  filter: drop-shadow(0px 0px 3px trasnparent);
+  transition: 1s ease all;
+}
+#contato .contato__card__bottom ul a:hover {
+  filter: drop-shadow(0px 0px 5px #556B2F);
 }
 #contato .contato__card__bottom ul li {
   color: #222222;

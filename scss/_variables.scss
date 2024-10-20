@@ -41,13 +41,13 @@ nav{
     justify-content: space-around;
     height: 50px;
     align-items: center;
-
     .side_menu--item a{
         padding: 3px 20px;
         font-weight: bold;
         text-decoration: none;
     }
-    @media screen and (max-width:768px){padding: 0px;}
+    @media screen and (max-width:768px){padding: 0px;
+        font-size: 0.6rem;}
     .side_menu--item a{
         text-decoration: none;
         color: $preto;
