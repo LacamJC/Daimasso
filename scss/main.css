@@ -79,6 +79,9 @@ section {
 @media screen and (max-width: 768px) {
   .curso_destaque {
     flex-direction: column;
+    padding: 0px;
+    border-left: none;
+    border-right: none;
   }
 }
 .curso_destaque .thumbail {
@@ -98,6 +101,7 @@ section {
   align-items: center;
   flex-direction: column;
   width: 60%;
+  padding: 0px 12px;
 }
 @media screen and (max-width: 768px) {
   .curso_destaque .content {
