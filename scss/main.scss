@@ -1,11 +1,17 @@
 @import '_variables';
 
+body{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
 .paragrafo{
     @include paragraph();
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
 }
 
 section {
     padding-top: 100px !important;
+    @include background();
 }
 
 #sobreNos{
@@ -21,8 +27,12 @@ section {
     flex-wrap: wrap;
     margin-top: 100px;
     margin-bottom: 100px;
+    background-color: $branco;
+    // border: 3px solid $preto;
 
-    border: 3px solid $preto;
+    .btn{
+        @include btn();
+    }
 
     @media screen and (max-width:768px)
     {
@@ -53,23 +63,34 @@ section {
 
         h1{
             @include title();
+            @media screen and (min-width: 769px)
+            {    
+                @include destaque(2deg)
         }
     }
-}
+}}
 
 
 .sobre_nos
 {
+
     // background-color: whitesmoke;
-    border: 1px solid $preto;
+    // border: 1px solid $preto;
     padding: 30px 0px;
     margin: 100px 0px;
+
+    h2{
+        @include destaque(0deg);
+    }
 }
 
 .cursos
 {
-    border: 2px solid $preto;
+    // border: 2px solid $preto;
     min-height: 500px;
+    h2{
+        @include destaque(0deg);
+    }
 
     .content {
         display: flex;
@@ -78,13 +99,14 @@ section {
         justify-content: space-around;
         align-items: center;
         .Card{
-            background-color: rgb(65, 65, 65);
+            background-color: $preto;
             width: 375px;
             height: 197px;
             margin: 50px 0px;
             border-radius: 35px;
             padding: 21px 20px;
             color: white;
+            border: 2px solid rgba(143, 143, 143, 0.342);
             overflow: hidden;
 
             transform: all 0.5s ease;
@@ -95,16 +117,20 @@ section {
                 top: 0px;
                 z-index: 3;
 
+                @include btn();
+
             }
-            h2{
+            h3{
                 z-index: 3;
                 position: relative;
+                transition: 1s ease all;
+                color: $dourado-claro;
             }
             .ball
             {
                 width: 80px;
                 height: 80px;
-                background-color: rgb(161, 161, 161);
+                background-color: $branco;
                 border-radius: 50%;
                 position: relative;
                 top: -103px;
@@ -115,6 +141,9 @@ section {
             }
 
             &:hover{
+                h3{
+                    color: $preto;
+                }
                 .ball{
                     width: 1000px;
                     top: -200px;
@@ -130,7 +159,7 @@ section {
 
 #contato{
     .contato__card{
-        background-color: whitesmoke;
+        background-color: $branco;
         width: 60%;
         min-height: 400px;
         margin: auto;
@@ -192,7 +221,9 @@ section {
 
 footer{
     position: relative;
-    border-top: 2px solid $preto;
+    // border-top: 2px solid $preto;
     margin-top: 300px;
     bottom: 0px;
+    background-color: $branco;
+    font-size: 0.9rem;
 }

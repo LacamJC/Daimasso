@@ -12,6 +12,13 @@ html{
     scroll-behavior: smooth;
 }
 
+// Cores
+$rosa-claro: #F28CB1; //- Transmite delicadeza, feminilidade e romantismo.
+$cinza-suave: #D3D3D3; //- Cria um ambiente elegante e atemporal.
+$branco: #ffffffef; // - Proporciona luminosidade e pureza.
+$dourado-claro: #556B2F; //#DAA520; // - Adiciona um toque de luxo e sofisticação.
+$verde-oliva: #556B2F;
+
 $preto: #474747;
 
 
@@ -56,6 +63,36 @@ nav{
     font-size: 1.2rem;
     letter-spacing: 1px;
     text-indent: 10px;
-
 }
 
+
+@mixin destaque($deg)
+{
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 10px;
+    /* background-image: linear-gradient(45deg, #DAA520, transparent); */
+    background-color: $dourado-claro;
+    transform: rotate($deg);
+    color: $branco;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+}
+
+@mixin btn(){
+    background-color: $dourado-claro;
+    border-color: $dourado-claro;
+    color: $branco;
+    font-weight: bold;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.377);
+    transition: 1s ease all;
+    border-width: 2px;
+    border-color: transparent;
+
+    &:hover{
+        border: 2px solid $preto;
+    }
+}
+
+@mixin background(){
+    background-color: $branco;
+}
